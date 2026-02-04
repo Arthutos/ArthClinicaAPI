@@ -23,5 +23,6 @@ public class Profissional
     private String email;
     private boolean ativo;
 
+    @OneToMany(mappedBy = "profissional")
     List<Consulta> consultas;
 }

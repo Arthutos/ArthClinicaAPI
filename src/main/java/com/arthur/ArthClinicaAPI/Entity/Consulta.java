@@ -24,6 +24,10 @@ public class Consulta
     private LocalTime horaInicio;
     private LocalDate horaFim;
     private Status status;
+    @ManyToOne
+    @JoinColumn(name = "paciente_id")
     private Paciente paciente;
+    @ManyToOne
+    @JoinColumn(name = "profissional_id")
     private Profissional profissional;
 }

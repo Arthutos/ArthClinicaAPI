@@ -24,5 +24,6 @@ public class Paciente
     private String cpf;
     private boolean ativo;
 
+    @OneToMany(mappedBy = "paciente")
     private List<Consulta> consultas;
 }
